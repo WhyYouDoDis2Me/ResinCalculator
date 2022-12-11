@@ -1,11 +1,14 @@
-import java.io.PrintStream;
+import java.io.*;
 import java.util.*;
+import org.json.simple.JSONObject;
 public class ResinCalculator {
     private static final PrintStream output = System.out;
 
     private static final Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
+        save();
+
         output.println("Welcome to the Resin Calculator by WhyYouDoDis2Me!");
         output.println("Do you have a save file containing your previous session that you would like to use? (y/n)");
         output.print("If this is your first time using this program, say \"n\": ");
@@ -49,5 +52,20 @@ public class ResinCalculator {
             String name = input.next();
             output.print(thing + ": " + name);
         }
+    }
+
+    private static void save() {
+        output.print("File name: ");
+        JSONObject JSONObject = new JSONObject();
+        JSONObject.put("Character", "Wanderer");
+        String filename = input.next();
+        try {
+            PrintStream fileWriter = new PrintStream("saves\\" + filename + ".json");
+            fileWriter.print(JSONObject.toJSONString());
+            fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        output.println("JSON File created: " + JSONObject);
     }
 }

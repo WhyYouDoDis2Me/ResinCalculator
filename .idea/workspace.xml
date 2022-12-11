@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1be6449e-a3cc-4731-a6a9-2eddb3abd4c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Material.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ResinCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1be6449e-a3cc-4731-a6a9-2eddb3abd4c8" name="Changes" comment="Figured out how to create json files, created a save method in ResinCalculator, will need to change main in ResinCalculator to have more methods">
+      <change afterPath="$PROJECT_DIR$/my-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/main/java/com/mycompany/app/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/test/java/com/mycompany/app/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/classes/com/mycompany/app/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/my-app-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/surefire-reports/TEST-com.mycompany.app.AppTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/surefire-reports/com.mycompany.app.AppTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/target/test-classes/com/mycompany/app/AppTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saves/save1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResinCalculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ResinCalculator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MakeJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MakeJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ResinCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResinCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +49,25 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "C:/Users/Johnny/Downloads/json-simple-1.1.1.jar",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Johnny\Documents\ResinCalculator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ResinCalculator">
+    <configuration name="MakeJSON" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MakeJSON" />
+      <module name="ResinCalculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ResinCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ResinCalculator" />
       <module name="ResinCalculator" />
@@ -52,6 +78,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ResinCalculator" />
+        <item itemvalue="Application.MakeJSON" />
       </list>
     </recent_temporary>
   </component>
@@ -64,6 +91,42 @@
       <option name="presentableId" value="Default" />
       <updated>1670664404305</updated>
     </task>
+    <task id="LOCAL-00001" summary="Character.java initial commit: Constructor and getListOfCharacters implemented but will likely need changes later">
+      <created>1670671351851</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670671351851</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Material.java: Basic things implemented but needs much work">
+      <created>1670671409516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670671409516</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ResinCalculator.java: Beginning of program implemented">
+      <created>1670671468634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670671468634</updated>
+    </task>
+    <task id="LOCAL-00004" summary="misc.xml and workspace.xml: Making sure every file is up-to-date">
+      <created>1670671505634</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670671505634</updated>
+    </task>
+    <task id="LOCAL-00005" summary="MakeJSON.java: Still trying to understand how to make a JSON file">
+      <created>1670671560553</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670671560553</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,5 +139,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Character.java initial commit: Constructor and getListOfCharacters implemented but will likely need changes later" />
+    <MESSAGE value="Material.java: Basic things implemented but needs much work" />
+    <MESSAGE value="ResinCalculator.java: Beginning of program implemented" />
+    <MESSAGE value="misc.xml and workspace.xml: Making sure every file is up-to-date" />
+    <MESSAGE value="MakeJSON.java: Still trying to understand how to make a JSON file" />
+    <MESSAGE value="Figured out how to create json files, created a save method in ResinCalculator, will need to change main in ResinCalculator to have more methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Figured out how to create json files, created a save method in ResinCalculator, will need to change main in ResinCalculator to have more methods" />
   </component>
 </project>
